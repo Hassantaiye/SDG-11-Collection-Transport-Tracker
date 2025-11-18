@@ -21,7 +21,13 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+// Allow only the frontend origin in production for security. Falls back to '*' if CLIENT_URL not set.
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  })
+);
 app.use(express.json());
 
 // Routes
@@ -49,8 +55,8 @@ const server = http.createServer(app);
 // Initialize Socket.io
 export const io = new Server(server, {
   cors: {
-    origin: "*", // or your frontend origin
-    methods: ["GET", "POST", "PUT"],
+    origin: process.env.CLIENT_URL || "*",
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   },
 });
 
