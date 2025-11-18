@@ -5,7 +5,7 @@ import axios from "./axiosInstance";
 // ================================
 export const getDrivers = async () => {
   try {
-    const res = await axios.get("/drivers");
+  const res = await axios.get("/api/drivers");
     return res.data; // returns array of drivers
   } catch (error) {
     console.error("❌ Failed to fetch drivers:", error);
@@ -18,7 +18,7 @@ export const getDrivers = async () => {
 // ================================
 export const getDriverById = async (driverId) => {
   try {
-    const res = await axios.get(`/drivers/${driverId}`);
+  const res = await axios.get(`/api/drivers/${driverId}`);
     return res.data; // returns driver object
   } catch (error) {
     console.error("❌ Failed to fetch driver:", error);
@@ -31,7 +31,7 @@ export const getDriverById = async (driverId) => {
 // ================================
 export const updateDriverProfile = async (profileData) => {
   try {
-    const res = await axios.put("/drivers/profile", profileData);
+  const res = await axios.put("/api/drivers/profile", profileData);
     return res.data.driver; // backend returns driver object
   } catch (error) {
     console.error("❌ Failed to update driver profile:", error);
@@ -44,7 +44,7 @@ export const updateDriverProfile = async (profileData) => {
 // ================================
 export const updateDriverLocation = async ({ lat, lng }) => {
   try {
-    const res = await axios.put("/drivers/location", { lat, lng });
+  const res = await axios.put("/api/drivers/location", { lat, lng });
     return res.data.location; // returns updated {lat, lng}
   } catch (error) {
     console.error("❌ Failed to update location:", error);

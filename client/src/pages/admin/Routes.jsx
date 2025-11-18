@@ -34,10 +34,7 @@ const RoutesPage = () => {
 
   return (
     <AdminLayout>
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold">Routes & Zones</h1>
-        <p className="text-gray-500">Manage collection routes and coverage zones</p>
-      </div>
+      <AdminHeader title="Routes & Zones" subtitle="Manage collection routes and coverage zones" />
 
       {/* Add Zone Button */}
       <div className="flex justify-end mb-6">

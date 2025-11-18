@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 
 import AdminLayout from "../../layout/AdminLayout";
+import AdminHeader from "../../components/AdminHeader";
 import LiveMap from "../../components/LiveMap";
 import axios from "../../api/axiosInstance"; 
 import { io } from "socket.io-client";
@@ -114,14 +115,7 @@ const AdminDashboard = () => {
   return (
     <AdminLayout>
       {/* PAGE HEADER */}
-      <div className="mb-10">
-        <h1 className="text-3xl font-bold text-gray-900 tracking-tight">
-          Welcome, {adminName} 👋
-        </h1>
-        <p className="text-gray-500 mt-1">
-          Overview • Insights • Real-time activity
-        </p>
-      </div>
+      <AdminHeader title={`Welcome, ${adminName} 👋`} subtitle="Overview • Insights • Real-time activity" />
 
       {/* STATS GRID */}
       <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

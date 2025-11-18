@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getDrivers } from "../../api/driverApi";
 import toast from "react-hot-toast";
 import AdminLayout from "../../layout/AdminLayout";
+import AdminHeader from "../../components/AdminHeader";
 import { Search, Phone, Mail, Truck, User } from "lucide-react";
 
 const ManageDrivers = () => {
@@ -43,9 +44,7 @@ const ManageDrivers = () => {
   return (
     <AdminLayout>
       <div className="p-6">
-        <h1 className="text-3xl font-extrabold text-gray-900 mb-4">
-          Manage Drivers
-        </h1>
+        <AdminHeader title="Manage Drivers" subtitle="View and manage driver accounts and vehicles" />
 
         <div className="relative mb-6 w-full sm:w-1/3">
           <Search className="absolute left-3 top-3 text-gray-400" size={18} />

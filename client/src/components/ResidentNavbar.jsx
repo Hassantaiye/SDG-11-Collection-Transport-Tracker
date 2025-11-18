@@ -46,6 +46,6 @@ const ResidentNavbar = () => {
       </div>
     </nav>
   );
-};s
+};
 
 export default ResidentNavbar;

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import io from "socket.io-client";
 import AdminLayout from "../../layout/AdminLayout";
+import AdminHeader from "../../components/AdminHeader";
 
 // Charts
 import { Line, Bar, Pie } from "react-chartjs-2";
@@ -84,10 +85,7 @@ const Analytics = () => {
   return (
     <AdminLayout>
       {/* HEADER */}
-      <div className="mb-8">
-        <h1 className="text-3xl font-bold">Analytics Dashboard</h1>
-        <p className="text-gray-500">Real-time waste management statistics</p>
-      </div>
+      <AdminHeader title="Analytics Dashboard" subtitle="Real-time waste management statistics" />
 
       {/* SUMMARY CARDS */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">

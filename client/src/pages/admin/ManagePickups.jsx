@@ -3,6 +3,7 @@ import { getAllPickups, updatePickupStatus } from "../../api/pickupApi";
 import { getDrivers } from "../../api/driverApi";
 import toast from "react-hot-toast";
 import AdminNavbar from "../../components/AdminNavbar";
+import AdminHeader from "../../components/AdminHeader";
 import Footer from "../../components/Footer";
 
 const ManagePickups = () => {
@@ -70,12 +71,7 @@ const ManagePickups = () => {
       <AdminNavbar />
 
       <div className="p-6">
-        <h1 className="text-4xl font-extrabold mb-4 text-gray-900">
-          Manage Pickups
-        </h1>
-        <p className="text-gray-600 mb-6">
-          Assign drivers and track pickup status in real-time
-        </p>
+        <AdminHeader title="Manage Pickups" subtitle="Assign drivers and track pickup status in real-time" />
 
         {/* Filters */}
         <div className="flex flex-col sm:flex-row gap-4 mb-6">
