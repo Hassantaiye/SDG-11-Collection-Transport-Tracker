@@ -1,4 +1,12 @@
-SDG-11 Collection Transport Tracker
+# Waste Collection & Transport Tracker
+## 🌐 Live Deployment
+
+| Platform | Status | Link |
+|----------|--------|------|
+| **Vercel** | ✅ Live | [Visit Site](https://sdg-11-waste-collection-transport-tracker-fpj4ga8we.vercel.app/) |
+| **Render** | ✅ Live | [Visit Site](https://waste-tracker-and-collection-api.onrender.com/) |
+
+SDG-11 Waste Collection & Transport Tracker
 A comprehensive waste management system built with the MERN stack (MongoDB, Express, React, Node.js) that enables efficient tracking and management of waste collection operations across communities.
 
 🌟 Features
@@ -6,7 +14,7 @@ For Residents
 Request Pickups: Schedule waste collection with detailed information (address, waste type, date)
 Track Pickups: Monitor the status of pickup requests in real-time
 Live Map: View driver locations and track collection progress
-# SDG-11 Collection Transport Tracker
+# SDG-11 Waste Collection & Transport Trackerr
 
 A comprehensive waste management system built with the MERN stack (MongoDB, Express, React, Node.js) that enables efficient tracking and management of waste collection operations across communities.
 
@@ -100,7 +108,7 @@ Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/SDG-11-Collection-Transport-Tracker.git
-cd SDG-11-Collection-Transport-Tracker
+cd SDG-11-Waste Collection & Transport Tracker
 ```
 
 ### Setup Server
