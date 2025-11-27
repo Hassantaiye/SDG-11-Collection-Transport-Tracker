@@ -20,19 +20,22 @@ A comprehensive waste management system built with the MERN stack (MongoDB, Expr
 
 🌟 Features
 
-## For Residents
+![Resident Screenshot](./assets/resident%20request%20pickup.png)
+
 - **Request Pickups**: Schedule waste collection with detailed information (address, waste type, date)
 - **Track Pickups**: Monitor the status of pickup requests in real-time
 - **Live Map**: View driver locations and track collection progress
 - **Dashboard**: Personalized overview of all pickup activities
 
 ## For Drivers
+![driver Screenshot](./assets/driver%20page.png)
 - **View Assignments**: Access assigned pickup requests
 - **Update Location**: Real-time GPS location sharing via Socket.io
 - **Profile Management**: Update personal and vehicle information
 - **Status Updates**: Mark pickups as completed or in-progress
 
 ## For Administrators
+![Admin Screenshot](./assets/admin%20page.png)
 - **Analytics Dashboard**: Comprehensive statistics and insights
   - Total pickups, drivers, and residents
   - Completion rates and pending requests
@@ -41,7 +44,6 @@ A comprehensive waste management system built with the MERN stack (MongoDB, Expr
 - **Pickup Management**: Assign drivers, monitor status, and manage all collection requests
 - **Live Tracking**: Real-time driver location heatmap
 - **Route Optimization**: Manage collection routes and zones
-
 ---
 
 🛠️ Tech Stack
